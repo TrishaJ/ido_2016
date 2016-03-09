@@ -19,20 +19,11 @@
   </head>
   <body>
 
-    <header class="container" style="height: 100px; margin-top: 10px;">
-        <div class="row">
-            <div class="col-md-2 col-md-offset-10 text-right">
-                <?= Widget::factory('User_Status') ?>
-            </div>
-        </div>
-    </header>
+    <?= Widget::factory('Menu') ?>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <?= Widget::factory('Menu') ?>
-            </div>
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <?php echo $content?>
             </div>
         </div>
